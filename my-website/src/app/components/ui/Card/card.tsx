@@ -16,7 +16,7 @@ export default function Card({image_src, header, description, links = []}: CardI
         {description}
       </p>
       <div className="flex flex-row gap-4">
-        {links.map((link) => (
+        {links.map((link, _) => (
           <a className="w-1/12" href={link.url}>
             <img  src={link.logo_path} alt={link.alt}/>
           </a>
