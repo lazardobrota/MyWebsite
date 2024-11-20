@@ -1,10 +1,35 @@
 import Image from "next/image";
-import Card from "./components/Card/card";
+import Card from "./components/ui/Card/card";
+import temp_pic from "./images/card-images/temp-pic.jpg";
+import github_logo from "./images/icons/github-logo.svg";
 
 export default function Home() {
   return (
     <>
-      <Card></Card>
+      <Card
+        image_src={temp_pic.src}
+        header="Header"
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+        >
+      </Card>
+      <Card
+        image_src={temp_pic.src}
+        header="Header"
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+        >
+      </Card>
+      <Card
+        image_src={temp_pic.src}
+        header="Header"
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+        >
+      </Card>
+      <Card
+        image_src={temp_pic.src}
+        header="Header"
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
+        >
+      </Card>
     </>
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
     //   <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
