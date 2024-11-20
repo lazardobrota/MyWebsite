@@ -1,9 +1,4 @@
-
-interface LinkInfo {
-  url: string,
-  logo_path: string,
-  alt: string
-}
+import { LinkInfo } from "@/app/types/card"
 
 interface CardInfo {
   image_src: string,
@@ -21,7 +16,7 @@ export default function Card({image_src, header, description, links = []}: CardI
         {description}
       </p>
       <div className="flex flex-row gap-4">
-        {links.map((link, index) => (
+        {links.map((link) => (
           <a className="w-1/12" href={link.url}>
             <img  src={link.logo_path} alt={link.alt}/>
           </a>
