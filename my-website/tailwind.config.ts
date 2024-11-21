@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import tailwind_scrollbar from "tailwind-scrollbar";
 
 export default {
   content: [
@@ -14,19 +15,25 @@ export default {
         darkpurple: {
           100: '#7e6ea9',
           200: '#65558f',
+          250: '#200d23',
           300: '#170d1d'
         }
       },
       boxShadow: {
         'round-sm': ' 0px 2px 10px 2px rgba(0, 0, 0, 0.25)',
         '4xl': [
-            '0 35px 35px rgba(0, 0, 0, 0.25)',
-            '0 45px 65px rgba(0, 0, 0, 0.15)'
+          '0 35px 35px rgba(0, 0, 0, 0.25)',
+          '0 45px 65px rgba(0, 0, 0, 0.15)'
         ],
         'inner-sm': ' inset 0px 2px 20px 4px rgba(0, 0, 0, 0.25)',
         'inner-m': ' inset 0px 2px 20px 11px rgba(0, 0, 0, 0.25)',
       }
     },
   },
-  plugins: [],
+  plugins: [
+    tailwind_scrollbar({
+      preferredStrategy: 'pseudoelements',
+      nocompatible: true
+    })
+  ],
 } satisfies Config;

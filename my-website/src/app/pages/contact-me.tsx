@@ -3,7 +3,7 @@ import Input from "../components/ui/input";
 
 export default function ContactMe() {
   return (
-    <div className="flex flex-col gap-20 items-center px-5">
+    <div id="contact-me" className="flex flex-col gap-20 items-center px-5">
       <p className="font-bold text-4xl">Contact Me</p>
       <div className="flex flex-col gap-6 items-center">
         <div className="flex flex-col gap-6">

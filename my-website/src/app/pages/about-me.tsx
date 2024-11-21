@@ -7,10 +7,10 @@ import BackgroundMiddle from "../components/Icons/bg-middle";
 export default function AboutMe() {
 
   return (
-    <div className="flex flex-col gap-20 place-content-center py-32 relative p-5">
+    <div id="about-me" className="flex flex-col gap-20 place-content-center py-32 relative p-5">
       <BackgroundMiddle preserveAspectRatio="none" className="size-full top-0 left-0 absolute -z-10"/>
       <div className="justify-items-center">
-        <p className="font-bold text-4xl text-white">About Me</p>
+        <h4 className="font-bold text-4xl text-white">About Me</h4>
       </div>
       <div className="flex flex-col gap-8 items-center">
         <p className="font-bold text-3xl text-white">Engineering</p>

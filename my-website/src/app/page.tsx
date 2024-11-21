@@ -1,3 +1,4 @@
+import Header from "./components/ui/header";
 import AboutMe from "./pages/about-me";
 import ContactMe from "./pages/contact-me";
 import Footer from "./pages/footer";
@@ -8,6 +9,7 @@ export default function Home() {
 
   return (
     <>
+      <Header></Header>
       <div className="flex flex-col gap-32 shadow-inner-sm">
         <Main></Main>
         <MyWork></MyWork>
