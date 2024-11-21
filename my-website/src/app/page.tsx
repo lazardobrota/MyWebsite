@@ -13,7 +13,7 @@ export default function Home() {
         <MyWork></MyWork>
         <AboutMe></AboutMe>
         <ContactMe></ContactMe>
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
       </div>
     </>
   );
