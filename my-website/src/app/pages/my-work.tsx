@@ -8,7 +8,7 @@ export default function MyWork() {
   const github: LinkInfo = {url: "https://github.com/lazardobrota", logo_path: github_logo.src, alt: "Github"}
 
   return (
-    <div className="flex flex-col gap-12 place-content-center">
+    <div className="flex flex-col gap-20 place-content-center">
       <div className="justify-items-center">
         <p className="font-bold text-4xl">My Work</p>
       </div>
