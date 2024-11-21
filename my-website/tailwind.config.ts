@@ -11,6 +11,11 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        darkpurple: {
+          100: '#7e6ea9',
+          200: '#65558f',
+          300: '#170d1d'
+        }
       },
       boxShadow: {
         'round-sm': ' 0px 2px 10px 2px rgba(0, 0, 0, 0.25)',
