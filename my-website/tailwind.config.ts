@@ -35,6 +35,7 @@ export default {
       },
       fontSize: {
         'h1': '3.625rem',
+        'h2': '2.625rem',
         'p1': '1.875rem',
       },
       keyframes: {
