@@ -17,6 +17,9 @@ export default {
           200: '#65558f',
           250: '#200d23',
           300: '#170d1d'
+        },
+        gray: {
+          250: '#d9d9d9'
         }
       },
       boxShadow: {
@@ -25,10 +28,14 @@ export default {
           '0 35px 35px rgba(0, 0, 0, 0.25)',
           '0 45px 65px rgba(0, 0, 0, 0.15)'
         ],
+        'thin': '0px 0px 10px 2px rgba(0, 0, 0, 0.50)',
         'inner-sm': ' inset 0px 2px 20px 4px rgba(0, 0, 0, 0.25)',
         'inner-m': ' inset 0px 2px 20px 11px rgba(0, 0, 0, 0.25)',
+      },
+      fontSize: {
+        'p1': '1.875rem',
       }
-    },
+    }
   },
   plugins: [
     tailwind_scrollbar({
