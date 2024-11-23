@@ -1,9 +1,11 @@
+import { LegacyRef } from "react";
 import Button from "../components/ui/button";
 import Input from "../components/ui/input";
+import { RefInfo } from "../types/reference";
 
-export default function ContactMe() {
+export default function ContactMe({ref}: RefInfo) {
   return (
-    <div id="contact-me" className="flex flex-col gap-20 items-center px-8 lg:px-36">
+    <div ref={ref as LegacyRef<HTMLDivElement>} id="contact-me" className="flex flex-col gap-20 items-center px-8 lg:px-36">
       <p className="font-bold text-4xl lg:text-h1">Contact Me</p>
       <div className="flex flex-col gap-16 w-full max-lg:max-w-3xl">
         <div className="flex flex-col gap-6 lg:gap-12">
