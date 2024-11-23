@@ -11,7 +11,7 @@ export default function Card({ image_src, header, description, links = [] }: Car
   return (
     <div className="p-3 max-w-96 rounded-lg overflow-hidden shadow-round-sm flex flex-col gap-8">
       <div className="w-full h-48 overflow-hidden">
-        <img className="rounded-lg w-full h-full object-cover" src={image_src} alt={"project image"} />
+        <img className="rounded-lg w-full h-full" src={image_src} alt={"project image"} />
       </div>
       <p className="font-bold text-4xl">{header}</p>
       <div className="h-36">
@@ -19,7 +19,7 @@ export default function Card({ image_src, header, description, links = [] }: Car
           {description}
         </p>
       </div>
-      <div className="flex flex-row gap-4">
+      <div className="flex flex-row">
         {links.map((link, index) => (
           <a key={index} className="w-1/6" href={link.url}>
             <img key={index} src={link.logo_path} alt={link.alt} />
