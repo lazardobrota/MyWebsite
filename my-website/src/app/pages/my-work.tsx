@@ -1,11 +1,14 @@
 import temp_pic from "../images/card-images/temp-pic.jpg";
+import sah_pic from "../images/card-images/sah.png";
 import github_logo from "../images/icons/github-logo.svg";
+import table_world_logo from "../images/icons/table-world.svg";
 import { LinkInfo } from "../types/card";
 import Card from "../components/ui/Card/card";
 
 export default function MyWork() {
 
   const github: LinkInfo = {url: "https://github.com/lazardobrota", logo_path: github_logo.src, alt: "Github"}
+  const table_world_database: LinkInfo = {url: "https://baza.beochess.rs/", logo_path: table_world_logo.src, alt: "Table world"}
 
   return (
     <div id="my-work" className="flex flex-col gap-20 place-content-center px-5 lg:px-28 xl:px-36">
@@ -14,10 +17,10 @@ export default function MyWork() {
       </div>
       <div className="flex flex-wrap gap-x-6 gap-y-11 place-content-center">
         <Card
-          image_src={temp_pic.src}
-          header="Header"
-          description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil."
-          links={[github]}
+          image_src={sah_pic.src}
+          header="Chess organization"
+          description="Belgrade's chess organization database for their players and clubs. Admins can add, update or delete player and club informations. They also have easier time with searching and sorting data."
+          links={[table_world_database]}
           >
         </Card>
         <Card
