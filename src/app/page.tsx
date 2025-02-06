@@ -41,7 +41,7 @@ export default function Home() {
           currentSection = id;
         }
       });
-      console.log(currentSection)
+      // console.log(currentSection)
       setActiveSection(currentSection);
     };
 

@@ -2,6 +2,7 @@ import { LegacyRef } from "react";
 import Button from "../components/ui/button";
 import Input from "../components/ui/input";
 import { RefInfo } from "../types/reference";
+import TextArea from "../components/ui/textarea";
 
 export default function ContactMe({ref}: RefInfo) {
   return (
@@ -13,7 +14,7 @@ export default function ContactMe({ref}: RefInfo) {
             <Input name="Name"  placeholder="Your Name"></Input>
             <Input name="Email" placeholder="Your Email"></Input>
           </div>
-          <Input name="Message" placeholder="Your Message"></Input>
+          <TextArea name="Message" placeholder="Your Message"></TextArea>
         </div>
         <div className="flex justify-center">
           <Button name="Submit"></Button>

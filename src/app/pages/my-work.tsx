@@ -37,7 +37,6 @@ export default function MyWork({ ref }: RefInfo) {
   const kotlin = "Kotlin"
 
   //Additional skills
-  const restAPI = "REST API"
   const multiModelus = "Multi Modules"
 
 
@@ -60,7 +59,7 @@ export default function MyWork({ ref }: RefInfo) {
           header="Catapult"
           description="Mobile application about cats. You can  search your favory cats and find a lot of information about them. If you are up to it take a quiz and see how much you know about cats. you can publish your score to leaderboard."
           links={[{ url: "https://github.com/lazardobrota/Catapult", logo_path: github_logo.src, alt: "Github" }]}
-          skills={[kotlin, restAPI]}
+          skills={[kotlin]}
         >
         </Card>
         <Card
@@ -71,7 +70,7 @@ export default function MyWork({ ref }: RefInfo) {
             { url: "https://github.com/StudentRAF/GymMicroservices", logo_path: github_logo.src, alt: "Github" },
             { url: "https://github.com/StudentRAF/GymApplication", logo_path: github_logo.src, alt: "Github" }
           ]}
-          skills={[ java, mysql, restAPI, multiModelus, react, typescript, materialUI]}
+          skills={[ java, mysql, multiModelus, react, typescript, materialUI]}
         >
         </Card>
         <Card
@@ -80,7 +79,7 @@ export default function MyWork({ ref }: RefInfo) {
           description="Person can login and search locations. They can leave a review and read other peoples reviews. There are three roles, regular user, moderator and admin.  Admins and moderators can choose if they want to remove review but admins can also remove persons role or person from 
 the website."
           links={[{ url: "https://github.com/lazardobrota/Travel_guide", logo_path: github_logo.src, alt: "Github" }]}
-          skills={[java, restAPI, react, typescript, shadcn, tailwindcss]}
+          skills={[java, react, typescript, shadcn, tailwindcss]}
         >
         </Card>
         <Card
