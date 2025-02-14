@@ -4,6 +4,9 @@ import cat_pic from "../images/card-images/cat.png";
 import gym_pic from "../images/card-images/gym.png";
 import connect4_pic from "../images/card-images/connect4.png";
 import travel_pic from "../images/card-images/travel-guide.png";
+import foodie_pic from "../images/card-images/foodie.png";
+import bliztard from "../images/card-images/master-slave-replication.webp";
+import bliztard2 from "../images/card-images/master-slave-replication.png";
 import mind_map_pic from "../images/card-images/mind-map.png";
 import github_logo from "../images/icons/github-logo.svg";
 import table_world_logo from "../images/icons/table-world.svg";
@@ -20,14 +23,11 @@ export default function MyWork({ ref }: RefInfo) {
   //Frontend
   const javascript = "JavaScript"
   const typescript = "TypeScript"
-  const tailwindcss = "Tailwindcss"
+  // const tailwindcss = "Tailwindcss"
   const react = "React"
-  const shadcn = "Shadcn/ui"
-  const materialUI = "Material UI"
   
   //Database
-  const mysql = "MySQL"
-  const postgresql = "PostgreSQL"
+  const sql = "SQL"
 
   //Language
   const python = "Python"
@@ -37,7 +37,12 @@ export default function MyWork({ ref }: RefInfo) {
   const kotlin = "Kotlin"
 
   //Additional skills
-  const multiModelus = "Multi Modules"
+  const microservices = "Microservices"
+  const websockets = "Web Sockets"
+  const swing = "Swing"
+  const aspNetCore = "ASP.NET Core "
+  const docker = "Docker"
+  const kubernetes = "Kubernetes"
 
 
   return (
@@ -47,11 +52,19 @@ export default function MyWork({ ref }: RefInfo) {
       </div>
       <div className="flex flex-wrap gap-x-6 gap-y-11 place-content-center">
         <Card
+        image_src={bliztard2.src}
+        header="Bliztard"
+        description="Distributed system based on Master-Slave architecture with custom SSTable and custom LSM Tree."
+        links={[{url:"https://github.com/SpaceInvadersRAF/Bliztard", logo_path: github_logo.src, alt: "Github"}]}
+        skills={[csharp, aspNetCore, docker, kubernetes]}
+        >
+        </Card>
+        <Card
           image_src={sah_pic.src}
           header="Chess organization"
           description="Belgrade's chess organization database for their players and clubs. Admins can add, update or delete player and club informations. They also have easier time with searching and sorting data."
           links={[table_world_database]}
-          skills={[react, typescript, tailwindcss, python, postgresql]}
+          skills={[react, typescript, python, sql]}
         >
         </Card>
         <Card
@@ -70,10 +83,21 @@ export default function MyWork({ ref }: RefInfo) {
             { url: "https://github.com/StudentRAF/GymMicroservices", logo_path: github_logo.src, alt: "Github" },
             { url: "https://github.com/StudentRAF/GymApplication", logo_path: github_logo.src, alt: "Github" }
           ]}
-          skills={[ java, mysql, multiModelus, react, typescript, materialUI]}
+          skills={[ java, sql, microservices, react, typescript]}
         >
         </Card>
         <Card
+        image_src={foodie_pic.src}
+        header="Food Ordering"
+        description="The client can log in and place an order for immediate delivery or schedule it for later. They can track the different statuses their order goes through before delivery and have the option to cancel it at first stage.
+Admins can create new dishes, view orders from all users, identify invalid orders, create new accounts with specific permissions, and manage all existing accounts."
+        links={[
+          {url: "https://github.com/lazardobrota/FoodOrderingSystem", logo_path: github_logo.src, alt: "Github"}
+        ]}
+        skills={[java, sql, react, typescript, websockets]}
+        >
+        </Card>
+        {/* <Card
           image_src={travel_pic.src}
           header="Travel Guide"
           description="Person can login and search locations. They can leave a review and read other peoples reviews. There are three roles, regular user, moderator and admin.  Admins and moderators can choose if they want to remove review but admins can also remove persons role or person from 
@@ -81,21 +105,21 @@ the website."
           links={[{ url: "https://github.com/lazardobrota/Travel_guide", logo_path: github_logo.src, alt: "Github" }]}
           skills={[java, react, typescript, shadcn, tailwindcss]}
         >
-        </Card>
-        <Card
+        </Card> */}
+        {/* <Card
           image_src={connect4_pic.src}
           header="Connect 4"
           description="Two Players can play connect 4. They can import already existing board with some positions of chips or they can play from the beginning like a regular game. The whole game is implemented in Haskell programming languagle."
           links={[{ url: "https://github.com/lazardobrota/Connect4", logo_path: github_logo.src, alt: "Github" }]}
           skills={[haskell]}
         >
-        </Card>
+        </Card> */}
         <Card
           image_src={mind_map_pic.src}
           header="Gerumap"
           description="Create your  own Mind map using vertices and edges.  Add names in vertices, change color or boldness. You can import already created Mind maps, export your own as Mind map or image."
           links={[{ url: "https://github.com/lazardobrota/gerumap", logo_path: github_logo.src, alt: "Github" }]}
-          skills={[java]}
+          skills={[java, swing]}
         >
         </Card>
       </div>

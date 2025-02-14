@@ -37,7 +37,6 @@ export default function Header() {
         </a>
       ))}
 
-      {/* Animated underline */}
       <motion.div
         className="absolute bottom-0 h-[3px] bg-white rounded"
         animate={{ left: underlineStyle.left, width: underlineStyle.width }}
