@@ -5,7 +5,6 @@ import gym_pic from "../images/card-images/gym.png";
 import connect4_pic from "../images/card-images/connect4.png";
 import travel_pic from "../images/card-images/travel-guide.png";
 import foodie_pic from "../images/card-images/foodie.png";
-import bliztard from "../images/card-images/master-slave-replication.webp";
 import bliztard2 from "../images/card-images/master-slave-replication.png";
 import mind_map_pic from "../images/card-images/mind-map.png";
 import github_logo from "../images/icons/github-logo.svg";
@@ -19,13 +18,13 @@ export default function MyWork({ ref }: RefInfo) {
 
   const github: LinkInfo = { url: "https://github.com/lazardobrota", logo_path: github_logo.src, alt: "Github" }
   const table_world_database: LinkInfo = { url: "https://baza.beochess.rs/", logo_path: table_world_logo.src, alt: "Table world" }
-  
+
   //Frontend
   const javascript = "JavaScript"
   const typescript = "TypeScript"
   // const tailwindcss = "Tailwindcss"
   const react = "React"
-  
+
   //Database
   const sql = "SQL"
 
@@ -33,7 +32,7 @@ export default function MyWork({ ref }: RefInfo) {
   const python = "Python"
   const java = "Java"
   const haskell = "Haskell"
-  const csharp = "C#" 
+  const csharp = "C#"
   const kotlin = "Kotlin"
 
   //Additional skills
@@ -46,17 +45,17 @@ export default function MyWork({ ref }: RefInfo) {
 
 
   return (
-    <div id="my-work" ref={ref as LegacyRef<HTMLDivElement>} className="flex flex-col gap-20 place-content-center px-5 lg:px-28 xl:px-36">
+    <div id="my-work" ref={ref as LegacyRef<HTMLDivElement>} className="flex flex-col gap-20 items-center px-5 lg:px-28 xl:px-36">
       <div className="justify-items-center">
-        <p className="font-bold text-4xl xl:text-h1">My Work</p>
+        <h4 className="font-bold text-4xl lg:text-h1">My Work</h4>
       </div>
       <div className="flex flex-wrap gap-x-6 gap-y-11 place-content-center">
         <Card
-        image_src={bliztard2.src}
-        header="Bliztard"
-        description="Distributed system based on Master-Slave architecture with custom SSTable and custom LSM Tree."
-        links={[{url:"https://github.com/SpaceInvadersRAF/Bliztard", logo_path: github_logo.src, alt: "Github"}]}
-        skills={[csharp, aspNetCore, docker, kubernetes]}
+          image_src={bliztard2.src}
+          header="Bliztard"
+          description="Distributed system based on Master-Slave architecture with custom SSTable and custom LSM Tree."
+          links={[{ url: "https://github.com/SpaceInvadersRAF/Bliztard", logo_path: github_logo.src, alt: "Github" }]}
+          skills={[csharp, aspNetCore, docker, kubernetes]}
         >
         </Card>
         <Card
@@ -83,18 +82,18 @@ export default function MyWork({ ref }: RefInfo) {
             { url: "https://github.com/StudentRAF/GymMicroservices", logo_path: github_logo.src, alt: "Github" },
             { url: "https://github.com/StudentRAF/GymApplication", logo_path: github_logo.src, alt: "Github" }
           ]}
-          skills={[ java, sql, microservices, react, typescript]}
+          skills={[java, sql, microservices, react, typescript]}
         >
         </Card>
         <Card
-        image_src={foodie_pic.src}
-        header="Food Ordering"
-        description="The client can log in and place an order for immediate delivery or schedule it for later. They can track the different statuses their order goes through before delivery and have the option to cancel it at first stage.
+          image_src={foodie_pic.src}
+          header="Food Ordering"
+          description="The client can log in and place an order for immediate delivery or schedule it for later. They can track the different statuses their order goes through before delivery and have the option to cancel it at first stage.
 Admins can create new dishes, view orders from all users, identify invalid orders, create new accounts with specific permissions, and manage all existing accounts."
-        links={[
-          {url: "https://github.com/lazardobrota/FoodOrderingSystem", logo_path: github_logo.src, alt: "Github"}
-        ]}
-        skills={[java, sql, react, typescript, websockets]}
+          links={[
+            { url: "https://github.com/lazardobrota/FoodOrderingSystem", logo_path: github_logo.src, alt: "Github" }
+          ]}
+          skills={[java, sql, react, typescript, websockets]}
         >
         </Card>
         {/* <Card
