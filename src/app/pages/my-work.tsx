@@ -1,18 +1,15 @@
-import temp_pic from "../images/card-images/temp-pic.jpg";
-import sah_pic from "../images/card-images/sah.png";
+import { LegacyRef } from "react";
+import Card from "../components/ui/Card/card";
 import cat_pic from "../images/card-images/cat.png";
-import gym_pic from "../images/card-images/gym.png";
-import connect4_pic from "../images/card-images/connect4.png";
-import travel_pic from "../images/card-images/travel-guide.png";
 import foodie_pic from "../images/card-images/foodie.png";
+import gym_pic from "../images/card-images/gym.png";
 import bliztard2 from "../images/card-images/master-slave-replication.png";
 import mind_map_pic from "../images/card-images/mind-map.png";
+import sah_pic from "../images/card-images/sah.png";
 import github_logo from "../images/icons/github-logo.svg";
 import table_world_logo from "../images/icons/table-world.svg";
 import { LinkInfo } from "../types/card";
-import Card from "../components/ui/Card/card";
 import { RefInfo } from "../types/reference";
-import { LegacyRef } from "react";
 
 export default function MyWork({ ref }: RefInfo) {
 

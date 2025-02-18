@@ -1,8 +1,6 @@
-import { LegacyRef } from "react";
 import BackgroundBottom from "../components/Icons/bg-bottom";
 import github_logo from "../images/icons/github-logo-white.svg";
 import linkedin_logo from "../images/icons/linkedin-logo-white.svg";
-import { RefInfo } from "../types/reference";
 
 export default function Footer() {
 

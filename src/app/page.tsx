@@ -8,7 +8,6 @@ import ContactMe from "./pages/contact-me";
 import Footer from "./pages/footer";
 import Main from "./pages/main";
 import MyWork from "./pages/my-work";
-import my_logo from "./images/icons/my-logo.svg";
 
 interface Section {
   id: string,

@@ -1,10 +1,6 @@
-import temp_pic from "../images/card-images/temp-pic.jpg";
-import github_logo from "../images/icons/github-logo.svg";
-import { LinkInfo } from "../types/card";
-import Card from "../components/ui/Card/card";
+import { LegacyRef } from "react";
 import BackgroundMiddle from "../components/Icons/bg-middle";
 import { RefInfo } from "../types/reference";
-import { LegacyRef } from "react";
 
 export default function AboutMe({ ref }: RefInfo) {
 

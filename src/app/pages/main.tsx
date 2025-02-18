@@ -1,6 +1,5 @@
 import { LegacyRef } from "react";
 import BackgroundTop from "../components/Icons/bg-top";
-import my_logo from "../images/icons/my-logo.svg";
 import me_picture from "../images/me.png";
 import { RefInfo } from "../types/reference";
 
