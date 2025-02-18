@@ -89,7 +89,7 @@ export default function MyWork({ ref }: RefInfo) {
           image_src={foodie_pic.src}
           header="Food Ordering"
           description="The client can log in and place an order for immediate delivery or schedule it for later. They can track the different statuses their order goes through before delivery and have the option to cancel it at first stage.
-Admins can create new dishes, view orders from all users, identify invalid orders, create new accounts with specific permissions, and manage all existing accounts."
+Admins can view orders from all users, identify invalid orders, manage all existing accounts..."
           links={[
             { url: "https://github.com/lazardobrota/FoodOrderingSystem", logo_path: github_logo.src, alt: "Github" }
           ]}

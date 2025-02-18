@@ -9,13 +9,14 @@ interface CardInfo {
   links?: LinkInfo[]
 }
 
-function openInNewTab(links: LinkInfo[]): void {
-  links.map((link, _) => {
-    window.open(link.url, "_blank")?.focus();
-  })
-}
-
 export default function Card({ image_src, header, description, skills = [], links = [] }: CardInfo) {
+
+  function openInNewTab(links: LinkInfo[]): void {
+    links.map((link, _) => {
+      window.open(link.url, "_blank")?.focus();
+    })
+  }
+
   return (
     <div onClick={_ => openInNewTab(links)}  className="p-3 max-w-96 rounded-lg overflow-hidden shadow-round-sm flex flex-col gap-4 transition duration-300 hover:-translate-y-2 cursor-pointer">
       <div className="w-full h-48 overflow-hidden">

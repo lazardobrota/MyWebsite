@@ -10,8 +10,12 @@ const tabs = [
   { label: "Contact Me", href: "#contact-me" },
 ];
 
-export default function Header() {
-  const [activeTab, setActiveTab] = useState(tabs[0].href);
+interface HeaderVertical {
+  active: string
+}
+
+export default function Header({active}: HeaderVertical) {
+  const [activeTab, setActiveTab] = useState(active);
   const [underlineStyle, setUnderlineStyle] = useState({ left: 0, width: 0 });
 
   useEffect(() => {
@@ -21,6 +25,15 @@ export default function Header() {
       setUnderlineStyle({ left: offsetLeft, width: offsetWidth });
     }
   }, [activeTab]);
+
+  useEffect(() => {
+    if (active) {
+      const newActiveTab = `#${active}`;
+      if (newActiveTab !== activeTab) {
+        setActiveTab(newActiveTab);
+      }
+    }
+  }, [active, activeTab]);
 
   return (
     <div className="flex flex-row sticky top-0 justify-center gap-8 px-5 py-5 bg-darkpurple-300 shadow-thin z-10">

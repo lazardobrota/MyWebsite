@@ -14,7 +14,7 @@ export default function AboutMe({ref}: RefInfo) {
       <div className="justify-items-center">
         <h4 className="font-bold text-4xl lg:text-h1 text-white">About Me</h4>
       </div>
-      <div>
+      <div className="flex">
         <div className="flex flex-col gap-8 max-lg:items-center">
           <p className="font-bold text-3xl lg:text-h2 text-white">Engineering</p>
           <div className="lg:w-1/2">

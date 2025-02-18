@@ -51,7 +51,7 @@ export default function Home() {
 
   return (
     <>
-      {size?.width !== undefined && size?.width < 1280 && <Header></Header>}
+      {size?.width !== undefined && size?.width < 1280 && <Header active={activeSection}></Header>}
       <div className="flex flex-col gap-32 shadow-inner-sm">
         {size?.width !== undefined && size?.width >= 1280 && <HeaderVertical active={activeSection}></HeaderVertical>}
         <Main ref={sections[0].ref}></Main>
