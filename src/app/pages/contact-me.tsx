@@ -13,11 +13,10 @@ interface ContactInfo {
 export default function ContactMe({ref}: RefInfo) {
 
   const [contactInfo, setContactInfo] = useState<ContactInfo>({name: "", subject: "", message: ""})
-  const email: string = "lazardobrota1323@gmail.com"
 
   function onClick() : void {
     console.log(contactInfo)
-    window.open(`https://mail.google.com/mail/?view=cm&to=${atob("cG9ydGZvbGlvbXl3ZWJzaXRlMjU4MUBnbWFpbC5jb20=")}&su=${contactInfo.subject}&body=${contactInfo.message}`, "_blank")?.focus();
+    window.open(`https://mail.google.com/mail/?view=cm&to=${atob("bGF6YXJwb3J0Zm9saW8yNTgxQGdtYWlsLmNvbQ==")}&su=${contactInfo.subject}&body=${contactInfo.message}`, "_blank")?.focus();
   }
 
 

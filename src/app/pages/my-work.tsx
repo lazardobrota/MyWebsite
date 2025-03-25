@@ -50,7 +50,7 @@ export default function MyWork({ ref }: RefInfo) {
         <Card
           image_src={bliztard2.src}
           header="Bliztard"
-          description="Distributed system based on Master-Slave architecture with custom SSTable and custom LSM Tree."
+          description="Distributed system using a Master-Slave architecture, featuring a custom SSTable implementation and a tailored LSM Tree for efficient data storage and retrieval."
           links={[{ url: "https://github.com/SpaceInvadersRAF/Bliztard", logo_path: github_logo.src, alt: "Github" }]}
           skills={[csharp, aspNetCore, docker, kubernetes]}
         >
@@ -66,7 +66,7 @@ export default function MyWork({ ref }: RefInfo) {
         <Card
           image_src={cat_pic.src}
           header="Catapult"
-          description="Mobile application about cats. You can  search your favory cats and find a lot of information about them. If you are up to it take a quiz and see how much you know about cats. you can publish your score to leaderboard."
+          description="A mobile app dedicated to cat lovers! Search for your favorite cat breeds and discover detailed information about them. Test your feline knowledge with fun quizzes, and if you're up for the challenge, compete with others by publishing your score on the leaderboard!"
           links={[{ url: "https://github.com/lazardobrota/Catapult", logo_path: github_logo.src, alt: "Github" }]}
           skills={[kotlin]}
         >
@@ -74,7 +74,7 @@ export default function MyWork({ ref }: RefInfo) {
         <Card
           image_src={gym_pic.src}
           header="Gym Application"
-          description="Web application where people can appoint their training by seeing at what times what parts of gym are occupied. This is for personal and induviduals trainings."
+          description="Web application where people can appoint their training by seeing at what times what parts of gym are occupied. This is for group and induvidual trainings."
           links={[
             { url: "https://github.com/StudentRAF/GymMicroservices", logo_path: github_logo.src, alt: "Github" },
             { url: "https://github.com/StudentRAF/GymApplication", logo_path: github_logo.src, alt: "Github" }
@@ -113,7 +113,7 @@ the website."
         <Card
           image_src={mind_map_pic.src}
           header="Gerumap"
-          description="Create your  own Mind map using vertices and edges.  Add names in vertices, change color or boldness. You can import already created Mind maps, export your own as Mind map or image."
+          description="Create your own mind map with customizable vertices and edges. Add names to vertices, adjust colors and boldness, and easily import existing mind maps. Export your creations as a mind map file or an image for seamless sharing."
           links={[{ url: "https://github.com/lazardobrota/gerumap", logo_path: github_logo.src, alt: "Github" }]}
           skills={[java, swing]}
         >
