@@ -42,7 +42,7 @@ export default function Header({active}: HeaderVertical) {
           key={tab.href}
           href={tab.href}
           onClick={() => setActiveTab(tab.href)}
-          className={` text-white font-bold relative transition-opacity duration-300 ${
+          className={` text-white text-xs font-bold relative transition-opacity duration-300 ${
             activeTab === tab.href ? 'opacity-100' : 'opacity-60 hover:opacity-100'
           }`}
         >
