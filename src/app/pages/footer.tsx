@@ -4,10 +4,6 @@ import linkedin_logo from "../images/icons/linkedin-logo-white.svg";
 
 export default function Footer() {
 
-  function openLink(link: string): void {
-    window.open()
-  }
-
   return (
     <div className="flex flex-row-reverse gap-4 relative pt-20 pb-10 px-5 lg:px-36">
       <BackgroundBottom preserveAspectRatio="none" className="left-0 top-0 size-full absolute -z-10" />

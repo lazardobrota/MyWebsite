@@ -16,7 +16,7 @@ export default function AboutMe({ ref }: RefInfo) {
           <div className="lg:w-1/2">
             <p className="text-xl text-white">
               My software engineering journey began four years ago, and I am now in my final year of Computer Science.
-              Throughout this time, I’ve worked on both solo and team projects, ranging from a distributed system with a custom SSTable implementation to fun side projects like a Flappy Bird clone.
+              Throughout this time, I&apos;ve worked on both solo and team projects, ranging from a distributed system with a custom SSTable implementation to fun side projects like a Flappy Bird clone.
               I enjoy tackling complex technical challenges and continuously expanding my knowledge in system architecture, databases, and efficient software design.
             </p>
           </div>
@@ -27,8 +27,8 @@ export default function AboutMe({ ref }: RefInfo) {
           <p className="font-bold text-3xl lg:text-h2 text-white lg:items-start">Exploring</p>
           <div>
             <p className="text-xl text-white">
-              I constantly challenge myself to learn new things, whether it's designing and building this website or exploring new concepts. 
-              I enjoy researching various topics and creating my own versions, and sometimes I take it a step further by developing something entirely original — like the game I'm currently working on for publishing.
+              I constantly challenge myself to learn new things, whether it&apos;s designing and building this website or exploring new concepts. 
+              I enjoy researching various topics and creating my own versions, and sometimes I take it a step further by developing something entirely original — like the game I&apos;m currently working on for publishing.
             </p>
           </div>
         </div>

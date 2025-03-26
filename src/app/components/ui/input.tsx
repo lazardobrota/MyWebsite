@@ -6,7 +6,7 @@ interface InputInfo<T> extends HTMLAttributes<T> {
   onChange?: ChangeEventHandler<T>;
 }
 
-export default function Input({name, placeholder, onChange, ...props}: InputInfo<HTMLInputElement>) {
+export default function Input({name, placeholder, onChange}: InputInfo<HTMLInputElement>) {
   return (
     <div className="flex flex-col gap-2 w-full">
       <label htmlFor={name}>{name}</label>

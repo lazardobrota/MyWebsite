@@ -13,11 +13,11 @@ import { RefInfo } from "../types/reference";
 
 export default function MyWork({ ref }: RefInfo) {
 
-  const github: LinkInfo = { url: "https://github.com/lazardobrota", logo_path: github_logo.src, alt: "Github" }
+  // const github: LinkInfo = { url: "https://github.com/lazardobrota", logo_path: github_logo.src, alt: "Github" }
   const table_world_database: LinkInfo = { url: "https://baza.beochess.rs/", logo_path: table_world_logo.src, alt: "Table world" }
 
   //Frontend
-  const javascript = "JavaScript"
+  // const javascript = "JavaScript"
   const typescript = "TypeScript"
   // const tailwindcss = "Tailwindcss"
   const react = "React"
@@ -28,7 +28,7 @@ export default function MyWork({ ref }: RefInfo) {
   //Language
   const python = "Python"
   const java = "Java"
-  const haskell = "Haskell"
+  // const haskell = "Haskell"
   const csharp = "C#"
   const kotlin = "Kotlin"
 

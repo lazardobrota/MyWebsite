@@ -14,9 +14,9 @@ export default function Main({ ref }: RefInfo) {
           Hellooooo;
         </p>
         <p className="max-xl:text-center text-white xl:text-xl">
-          I'm Lazar Dobrota, a Software Engineer passionate about building scalable backend systems and designing custom frontend interfaces when needed. 
+          I&apos;m Lazar Dobrota, a Software Engineer passionate about building scalable backend systems and designing custom frontend interfaces when needed. 
           I focus on clean architecture and performance optimization. 
-          And while I enjoy coding in Java, I don't drink coffee.
+          And while I enjoy coding in Java, I don&apos;t drink coffee.
         </p>
       </div>
     </div>

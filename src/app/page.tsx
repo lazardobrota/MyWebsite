@@ -34,7 +34,7 @@ export default function Home() {
       let currentSection: string = '';
       sections.forEach(({ id, ref }) => {
         const sectionTop: number = ref.current?.offsetTop || 0;
-        const sectionHeight: number = ref.current?.offsetHeight || 0;
+        // const sectionHeight: number = ref.current?.offsetHeight || 0;
         // console.log( id + " " + window.scrollY + ">= " + ref.current?.offsetTop)
         if (window.scrollY + 200 >= sectionTop) {
           currentSection = id;

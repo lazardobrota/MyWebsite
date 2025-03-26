@@ -6,7 +6,7 @@ interface TextAreaInfo<T> extends HTMLAttributes<T> {
   onChange?: ChangeEventHandler<T>;
 }
 
-export default function TextArea({name, placeholder, onChange, ...props}: TextAreaInfo<HTMLTextAreaElement>) {
+export default function TextArea({name, placeholder, onChange}: TextAreaInfo<HTMLTextAreaElement>) {
   return (
     <div className="flex flex-col gap-2 w-full">
       <label htmlFor="name">{name}</label>

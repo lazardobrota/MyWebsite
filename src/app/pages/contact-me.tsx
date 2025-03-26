@@ -15,8 +15,7 @@ export default function ContactMe({ref}: RefInfo) {
   const [contactInfo, setContactInfo] = useState<ContactInfo>({name: "", subject: "", message: ""})
 
   function onClick() : void {
-    console.log(contactInfo)
-    window.open(`https://mail.google.com/mail/?view=cm&to=${atob("bGF6YXJwb3J0Zm9saW8yNTgxQGdtYWlsLmNvbQ==")}&su=${contactInfo.subject}&body=${contactInfo.message}`, "_blank")?.focus();
+    window.open(`https://mail.google.com/mail/?view=cm&to=${atob(process.env.NEXT_PUBLIC_EMAIL_ENCODED ?? "")}&su=${contactInfo.subject}&body=${contactInfo.message}`, "_blank")?.focus();
   }
 
 
