@@ -57,8 +57,8 @@ export default function MyWork({ ref }: RefInfo) {
         </Card>
         <Card
           image_src={sah_pic.src}
-          header="Chess organization"
-          description="Belgrade's chess organization database for their players and clubs. Admins can add, update or delete player and club informations. They also have easier time with searching and sorting data."
+          header="Chess Federation"
+          description="Belgrade's Chess Federation database for their players and clubs. Admins can add, update or delete player and club informations. They also have easier time with searching and sorting data."
           links={[table_world_database]}
           skills={[react, typescript, python, sql]}
         >
