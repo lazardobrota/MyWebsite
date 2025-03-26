@@ -46,7 +46,7 @@ export default function MyWork({ ref }: RefInfo) {
       <div className="justify-items-center">
         <h4 className="font-bold text-4xl lg:text-h1">My Work</h4>
       </div>
-      <div className="flex flex-wrap gap-x-6 gap-y-11 place-content-center">
+      <div className="flex flex-wrap gap-x-6 gap-y-11 place-content-center lg:max-w-custom">
         <Card
           image_src={bliztard2.src}
           header="Bliztard"
